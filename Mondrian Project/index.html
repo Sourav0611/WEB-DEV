@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      .body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        height: 748px;
+        width: 748px;
+        gap: 9px;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+        background-color: #232629;
+      }
+
+      .item {
+        background-color: aqua;
+      }
+      .i1,
+      .i2 {
+        background-color: red;
+      }
+      .i2 {
+        grid-column: span 3;
+      }
+      .i2,
+      .i3,
+      .i4,
+      .i6,
+      .i7 {
+        background: aqua;
+      }
+      .i3 {
+        grid-row: span 2;
+      }
+      .i4 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .i5 {
+        background-color: blue;
+        border-bottom: 10px solid black;
+      }
+      .i6 {
+        grid-row: span 2;
+      }
+      .i8 {
+        background-color: yellow;
+      }
+      .i9 {
+        background-color: orchid;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="item i1"></div>
+        <div class="item i2"></div>
+        <div class="item i3"></div>
+        <div class="item i4"></div>
+        <div class="item i5"></div>
+        <div class="item i6"></div>
+        <div class="item i7"></div>
+        <div class="item i8"></div>
+        <div class="item i9"></div>
+      </div>
+    </div>
+  </body>
+</html>
